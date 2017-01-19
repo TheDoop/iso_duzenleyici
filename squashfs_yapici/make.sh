@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd ..
-if [ -d ./config/chroot ]
+if [ -f ./config/chroot ]
 then
 chrootx=$(cat ./config/chroot)
 else
@@ -9,7 +9,7 @@ echo "$(cat malzeme/$(cat config/lang)/1)"
 read chrootx
 fi
 mksquashfs $chrootx ./filesystem.squashfs -comp xz -wildcards
-if [ -d ./config/binary ]
+if [ -f ./config/binary ]
 then
 rm -f $(cat ./config/binary)
 mv ./filesystem.squashfs $(cat ./config/binary)/live/filesystem.squashfs
