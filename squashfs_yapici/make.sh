@@ -1,5 +1,5 @@
 #!/bin/bash
-
+konum=$(pwd)
 cd ..
 if [ -f ./config/chroot ]
 then
@@ -13,6 +13,7 @@ rm -rf $chrootx/var/cache/apt/archives/*
 rm -rf $chrootx/root/*
 cp -prf $chrootx/etc/skel/* $chrootx/root/
 rm -rf $chrootx/var/lib/apt/lists/*
+cd $konum
 mksquashfs $chrootx ./filesystem.squashfs -comp xz -wildcards
 if [ -f ./config/binary ]
 then
