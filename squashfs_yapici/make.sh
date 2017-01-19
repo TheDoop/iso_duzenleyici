@@ -19,7 +19,7 @@ if [ -f ./config/binary ]
 then
 rm -f $(cat ./config/binary)
 mv ./filesystem.squashfs $(cat ./config/binary)/live/filesystem.squashfs
-cp -f $(cat ./config/chroot/)/boot/initrd.img* $(cat ./config/binary)/live/initrd.img
-mkdir $(cat ./config/binary)/live 2>&1 /dev/null
-cp -f $(cat ./config/chroot/)/boot/vmlinuz* $(cat ./config/binary)/live/vmlinuz
+cp -f $(cat ./config/chroot)/boot/initrd.img* $(cat ./config/binary)/live/initrd.img
+mkdir $(cat ./config/binary)/live
+cp -f $(cat ./config/chroot)/boot/vmlinuz* $(cat ./config/binary)/live/vmlinuz
 fi
