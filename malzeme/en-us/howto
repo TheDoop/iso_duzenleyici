@@ -17,3 +17,13 @@ Creates a live iso. You can do Write and install this live DVD/USB.
 
 4- squashfs Builder
 This program is used to build squashfs through the lb build. You can add this SquashFS File to the live iso. You can also open and edit it with the iso extractor.
+
+#You need:
+
+-live build
+
+-squashfs tools
+
+-xorriso
+
+-mtools
