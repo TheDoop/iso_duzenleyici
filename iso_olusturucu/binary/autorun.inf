@@ -1,0 +1,9 @@
+[autorun]
+open=setup.exe
+icon=setup.exe
+label=Custom live iso
+
+[Content]
+MusicFiles=false
+PictureFiles=false
+VideoFiles=false

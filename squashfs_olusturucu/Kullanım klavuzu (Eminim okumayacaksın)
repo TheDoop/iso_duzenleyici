@@ -1,0 +1,20 @@
+Bunu okuyorsan muhtemelen "Eminim okumayacaksın" dediğim okuyorsundur :D
+
+Nasıl kullanılır:
+
+1- yap.sh çalıştır.
+2- "P: Pausing build: starting interactive shell..." yazısı çıkınca komut istemini bu dizinde aç
+3- sudo chroot ./chroot yaz
+4- kurmak istediğin paketleri kur veya chroot dizininin içine istediklerini at
+5- işin bitince duran komut isteminde enter yap
+6- iso oluşur muhtemelen oluşmazsa bir yerlerde sıkıntı vardır.
+
+Notlar:
+Debian deposuna ayarlı. Değiştirmek için yap.sh içini aç düzenle
+fikir versin diye paketler adında bir dosya atıyorum içini aç bak
+Bir sorun çıkarsa Telegram üzerinden @parduscix olarak ulaş.
+
+Eğer amd64 ile i386 aynı anda kurulsun istiyorsan şunu çalıştır
+dpkg --add-architecture i386
+
+
