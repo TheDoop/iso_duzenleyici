@@ -6,7 +6,7 @@ Consists of 4 subprograms.
 This program extract Your ISO file.
 Allows you to modify chroot.
 
-2- squashfs yapıcı:
+2- squashfs maker:
 Bu program daha önceden düzenlediğiniz yada sıfırdan oluşturduğunuz chrootu 
 XZ sıkıştırması ve block size 512 kb olacak biçimde sıkıştırır. Daha sonra
 bu squashfs dosyasını live isonuza eklebilirsiniz.
