@@ -8,6 +8,11 @@ else
 echo "$(cat malzeme/$(cat config/lang)/1)"
 read chrootx
 fi
+rm -rf $chrootx/var/log/*
+rm -rf $chrootx/var/cache/apt/archives/*
+rm -rf $chrootx/root/*
+cp -prf $chrootx/etc/skel/* $chrootx/root/
+rm -rf $chrootx/var/lib/apt/lists/*
 mksquashfs $chrootx ./filesystem.squashfs -comp xz -wildcards
 if [ -f ./config/binary ]
 then
