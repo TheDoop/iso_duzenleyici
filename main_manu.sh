@@ -2,7 +2,7 @@
 depo=""
 if [ "$USER" = "root" ]
 then
-cat "$(cat malzeme/$(cat config/lang)/menu)"
+cat malzeme/$(cat config/lang)/menu
 read secenek
 
 if [ "$secenek" = "1" ]
