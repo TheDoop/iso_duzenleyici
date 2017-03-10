@@ -1,5 +1,6 @@
 #!/bin/bash
 depo=""
+konum=$(pwd)
 if [ "$USER" = "root" ]
 then
 cat malzeme/$(cat config/lang)/menu
@@ -33,11 +34,10 @@ fi
 if [ "$secenek" = "4" ]
 then
 clear
+echo "$(cat malzeme/$(cat config/lang)/5)"
 cd squashfs_olusturucu
 chmod +x yap.sh
-echo "$(cat malzeme/$(cat config/lang)/5)"
-read depo
-./yap.sh $depo
+./yap.sh
 fi
 
 if [ "$secenek" = "5" ]
@@ -76,7 +76,7 @@ echo "$chrootx" > ./config/chroot
 echo "$binaryx" > ./config/binary
 fi
 
-
+cd $konum
 echo "$(cat malzeme/$(cat config/lang)/3)"
 read duraklama
 clear

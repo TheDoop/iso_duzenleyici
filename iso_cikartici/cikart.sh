@@ -3,6 +3,8 @@ mkdir /mnt/iso/
 cd ../ 
 echo "$(cat malzeme/$(cat config/lang)/6)"
 read iso
+#iso=$(zenity -file-selection)
+fi
 umount /mnt/iso
 mount $iso /mnt/iso/ 
 mkdir /mnt/squashfs/ 
