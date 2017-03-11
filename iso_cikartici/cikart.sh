@@ -5,7 +5,7 @@ echo "$(cat malzeme/$(cat config/lang)/6)"
 read iso
 #iso=$(zenity -file-selection)
 umount /mnt/iso
-mount $iso /mnt/iso/ 
+mount -o loop $iso /mnt/iso/ 
 mkdir /mnt/squashfs/ 
 if [ -f /mnt/iso/live/filesystem.squashfs ]
 then
