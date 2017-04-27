@@ -24,5 +24,4 @@ unsquashfs $squashfs
 mv squashfs-root chroot 
 echo "nameserver 8.8.8.8" > ./chroot/etc/resolv.conf
 mount --bind /dev/ ./chroot/dev/
-mount --bind /proc/ ./chroot/proc/
 mount --bind /sys/ ./chroot/sys/
