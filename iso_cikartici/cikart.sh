@@ -1,12 +1,13 @@
 #!/bin/bash
 mkdir /mnt/iso/ 
 cd ../ 
-echo "$(cat malzeme/$(cat config/lang)/6)"
 if [ -f config/iso ]
 then
-iso="$(cat config/lang)"
+iso="$(cat config/iso)"
 else
+echo "$(cat malzeme/$(cat config/lang)/6)"
 read iso
+echo "$iso" > ./config/iso
 fi
 #iso=$(zenity -file-selection)
 umount /mnt/iso
