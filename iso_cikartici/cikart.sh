@@ -20,6 +20,7 @@ else
 echo "$(cat malzeme/$(cat config/lang)/7)" 
 read squashfs
 fi
+rm -rf chroot
 unsquashfs $squashfs
 mv squashfs-root chroot 
 echo "nameserver 8.8.8.8" > ./chroot/etc/resolv.conf
