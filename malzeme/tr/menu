@@ -1,18 +1,20 @@
 ##############################################################
-#                ISO ÜRETİM VE DÜZENLEYİCİ                   #
+#                ISO ÜRETIM VE DÜZENLEYICI                   #
+#                           v2                               #
+#       Yazan: Ali Riza KESKIN (PTS Lider yardimcisi)        #
 #                                                            #
-#       Yazan: Ali Rıza KESKİN (PTS Lider yardımcısı)        #
-#                                                            #
-# Kullanım:                                                  #
-# 1- Elinizdeki isoyu çıkartmak için                         #
-# 2- Elinizdeki chroot'u squashfs haline getirmek için       #
-# 3- Elinizdeki squashfs dosyasını iso yapmak için           #
-# 4- Sıfırdan squashfs oluşturmak için (lb build ile)        #
-# 5- Nasıl kullanılır metnini göstermek için                 #
-# 6- Çıkmak için                                             #
-# 7- Ayar yapmak için                                        #
+# Kullanim:                                                  #
+# 1- Elinizdeki isoyu cikartmak icin                         #
+# 2- Elinizdeki chroot'u squashfs haline getirmek icin       #
+# 3- Elinizdeki squashfs dosyasini iso yapmak icin           #
+# 4- Sifirdan squashfs oluşturmak icin (lb build ile)        #
+# 5- Nasil kullanilir metnini göstermek icin                 #
+# 6- Çikmak icin                                             #
+# 7- Ayar yapmak icin                                        #
+# 8- lb-buid ayarlari icin                                   #
+# 9- efi.img imajini güncellemek icin                        #
 #                                                            #
 #                                                            #
 ##############################################################
 
-Seçiminizi giriniz:
+Seciminizi giriniz:

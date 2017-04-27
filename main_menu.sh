@@ -64,6 +64,13 @@ echo "$(cat malzeme/$lang/1)"
 read chrootx
 echo "$(cat malzeme/$lang/2)"
 read binaryx
+echo "$chrootx" > ./config/chroot
+echo "$binaryx" > ./config/binary
+fi
+
+if [ "$secenek" = "8" ]
+then
+clear
 echo "$(cat malzeme/$lang/8)"
 read pool
 echo "$(cat malzeme/$lang/9)"
@@ -73,9 +80,17 @@ read arch
 echo "$arch" > ./config/arch
 echo "$pool" > ./config/pool
 echo "$secpool" > ./config/security_pool
-echo "$chrootx" > ./config/chroot
-echo "$binaryx" > ./config/binary
 fi
+
+if [ "$secenek" = "9" ]
+then
+clear
+cd efi_saglayici
+chmod +x ./efi.sh
+./efi.sh
+cd ..
+fi
+
 
 cd $konum
 echo "$(cat malzeme/$lang/3)"

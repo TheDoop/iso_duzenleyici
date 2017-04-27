@@ -1,6 +1,6 @@
 ##############################################################
 #                ISO BUILDER AND EDITOR                      #
-#                                                            #
+#                         v2                                 #
 #      Writer: Ali Rıza KESKİN (PTS Helper leader)           #
 #                                                            #
 # Use:                                                       #
@@ -11,6 +11,8 @@
 # 5- To show how to use the text                             #
 # 6- To exit                                                 #
 # 7- To adjust                                               #
+# 8- To ajust for lb-build                                   #
+# 9- To update efi.img image                                 #
 #                                                            #
 #                                                            #
 ##############################################################
