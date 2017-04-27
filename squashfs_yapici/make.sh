@@ -18,3 +18,6 @@ cd $konum
 umount -f $chrootx/dev/
 umount -f $chrootx/sys/
 mksquashfs $chrootx ./filesystem.squashfs -comp xz -wildcards
+mount --bind /dev/ $chrootx/dev/
+mount --bind /sys/ $chrootx/sys/
+
