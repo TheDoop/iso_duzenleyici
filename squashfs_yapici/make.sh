@@ -15,4 +15,6 @@ rm -rf $chrootx/root/*
 cp -prf $chrootx/etc/skel/* $chrootx/root/
 rm -rf $chrootx/var/lib/apt/lists/*
 cd $konum
+umount -f $chrootx/dev/
+umount -f $chrootx/sys/
 mksquashfs $chrootx ./filesystem.squashfs -comp xz -wildcards
