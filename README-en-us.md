@@ -7,9 +7,9 @@ This program extract Your ISO file.
 Allows you to modify chroot.
 
 2- squashfs maker:
-Bu program daha önceden düzenlediğiniz yada sıfırdan oluşturduğunuz chrootu 
-XZ sıkıştırması ve block size 512 kb olacak biçimde sıkıştırır. Daha sonra
-bu squashfs dosyasını live isonuza eklebilirsiniz.
+This program is the chroot you created from scratch
+XZ compression and block size will compress to 512 kb. 
+Later you can add this squashfs file to your live site.
 
 3- iso Builder:
 Using the ready-made templates that come with this program,
