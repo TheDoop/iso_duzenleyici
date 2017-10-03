@@ -9,7 +9,7 @@ Allows you to modify chroot.
 2- squashfs maker:
 This program is the chroot you created from scratch
 XZ compression and block size will compress to 512 kb. 
-Later you can add this squashfs file to your live site.
+Later you can add this squashfs file to your live iso.
 
 3- iso Builder:
 Using the ready-made templates that come with this program,
