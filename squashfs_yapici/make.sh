@@ -17,7 +17,11 @@ rm -rf $chrootx/var/lib/apt/lists/*
 cd $konum
 umount -f $chrootx/dev/
 umount -f $chrootx/sys/
+umount -f $chrootx/proc/
+umount -f $chrootx/dev/pts/
 mksquashfs $chrootx ./filesystem.squashfs -comp xz -wildcards
 mount --bind /dev/ $chrootx/dev/
 mount --bind /sys/ $chrootx/sys/
+mount --bind /sys/ $chrootx/proc/
+mount --bind /sys/ $chrootx/dev/pts/
 
