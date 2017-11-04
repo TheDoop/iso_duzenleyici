@@ -16,6 +16,9 @@ mkdir /mnt/squashfs/
 if [ -f /mnt/iso/live/filesystem.squashfs ]
 then
 squashfs=/mnt/iso/live/filesystem.squashfs
+elif [ -f /mnt/iso/casper/filesystem.squashfs ]
+then
+squashfs=/mnt/iso/casper/filesystem.squashfs
 else
 echo "$(cat malzeme/$(cat config/lang)/7)" 
 read squashfs
