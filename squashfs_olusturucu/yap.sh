@@ -1,8 +1,8 @@
 #!/bin/sh
 #Degişken ayarı
 cd ..
-DEBIAN_POOL=$(cat ./config/pool)
-SECURITY_POOL=$(cat ./config/security_pool)
+DEBIAN_POOL=$(cat ../config/pool)
+SECURITY_POOL=$(cat ../config/security_pool)
 arch=$(cat ./config/arch)
 #Ana ayarlar
 lb config --distribution stretch
