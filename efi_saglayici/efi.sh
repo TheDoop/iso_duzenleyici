@@ -5,7 +5,7 @@ echo ":"
 else
 echo "$(cat ../malzeme/$lang/2)"
 read binaryx
-echo "$binaryx" > ./config/binary
+echo "$binaryx" > ../config/binary
 fi
 binary="$(cat ../config/binary)"
 cp -pf $binary/boot/grub/efi.img efi.img
