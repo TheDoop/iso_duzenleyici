@@ -64,8 +64,18 @@ echo "$(cat malzeme/$lang/1)"
 read chrootx
 echo "$(cat malzeme/$lang/2)"
 read binaryx
+if [ "$chrootx" == "" ]
+then
+echo "$(pwd/chroot)" > ./config/chroot
+else
 echo "$chrootx" > ./config/chroot
-echo "$binaryx" > ./config/binary
+fi
+if [ "$binaryx" == "" ]
+then
+echo "$(pwd/iso_olusturucu/binary/)" > ./config/chroot
+else
+echo "$chrootx" > ./config/chroot
+fi
 fi
 
 if [ "$secenek" = "8" ]
