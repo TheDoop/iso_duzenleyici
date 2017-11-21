@@ -66,13 +66,13 @@ echo "$(cat malzeme/$lang/2)"
 read binaryx
 if [ "$chrootx" == "" ]
 then
-echo "$(pwd/chroot)" > ./config/chroot
+echo "$(pwd)/chroot" > ./config/chroot
 else
 echo "$chrootx" > ./config/chroot
 fi
 if [ "$binaryx" == "" ]
 then
-echo "$(pwd/iso_olusturucu/binary/)" > ./config/chroot
+echo "$(pwd)/iso_olusturucu/binary/" > ./config/chroot
 else
 echo "$chrootx" > ./config/chroot
 fi
