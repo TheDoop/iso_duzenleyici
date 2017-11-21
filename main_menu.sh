@@ -72,9 +72,9 @@ echo "$chrootx" > ./config/chroot
 fi
 if [ "$binaryx" == "" ]
 then
-echo "$(pwd)/iso_olusturucu/binary/" > ./config/chroot
+echo "$(pwd)/iso_olusturucu/binary/" > ./config/binary
 else
-echo "$chrootx" > ./config/chroot
+echo "$chrootx" > ./config/binary
 fi
 fi
 
