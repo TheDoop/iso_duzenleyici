@@ -11,8 +11,8 @@ echo "$chrootx" > ./config/chroot
 fi
 rm -rf $chrootx/var/log/*
 rm -rf $chrootx/var/cache/apt/archives/*
-rm -rf $chrootx/root/*
-cp -prf $chrootx/etc/skel/* $chrootx/root/
+rm -rf $chrootx/root/.bash_history
+cp -prf $chrootx/etc/skel/.{config,kde,local,gconf}/ $chrootx/root/
 rm -rf $chrootx/var/lib/apt/lists/*
 cd $konum
 umount -Rf $chrootx/dev/
