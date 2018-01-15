@@ -1,17 +1,17 @@
 ##############################################################
 #                ISO ÜRETIM VE DÜZENLEYICI                   #
-#                           v2                               #
+#                           v3                               #
 #       Yazan: Ali Riza KESKIN (PTS Lider yardimcisi)        #
 #                                                            #
 # Kullanim:                                                  #
 # 1- Elinizdeki isoyu cikartmak icin                         #
 # 2- Elinizdeki chroot'u squashfs haline getirmek icin       #
 # 3- Elinizdeki squashfs dosyasini iso yapmak icin           #
-# 4- Sifirdan squashfs oluşturmak icin (lb build ile)        #
+# 4- Sifirdan chroot oluşturmak icin (chroot oluşturucu ile) #
 # 5- Nasil kullanilir metnini göstermek icin                 #
 # 6- Çikmak icin                                             #
 # 7- Ayar yapmak icin                                        #
-# 8- lb-buid ayarlari icin                                   #
+# 8- chroot oluşturucu ayarlari icin                         #
 # 9- efi.img imajini güncellemek icin                        #
 #                                                            #
 #                                                            #

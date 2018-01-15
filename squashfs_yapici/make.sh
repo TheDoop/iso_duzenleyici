@@ -22,6 +22,6 @@ umount -Rf $chrootx/dev/pts/
 mksquashfs $chrootx ./filesystem.squashfs -comp xz -wildcards
 mount --bind /dev/ $chrootx/dev/
 mount --bind /sys/ $chrootx/sys/
-mount --bind /sys/ $chrootx/proc/
+mount --bind /proc/ $chrootx/proc/
 mount --bind /sys/ $chrootx/dev/pts/
 

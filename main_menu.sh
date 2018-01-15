@@ -1,7 +1,7 @@
 #!/bin/bash
-depo=""
-lang="$(cat config/lang)"
-konum=$(pwd)
+epxort depo=""
+export lang="$(cat config/lang)"
+export konum=$(pwd)
 if [ "$USER" = "root" ]
 then
 cat malzeme/$lang/menu
@@ -36,9 +36,9 @@ if [ "$secenek" = "4" ]
 then
 clear
 echo "$(cat malzeme/$lang/5)"
-cd squashfs_olusturucu
-chmod +x yap.sh
-./yap.sh
+cd chroot_olusturucu
+chmod +x mkchroot.sh
+./mkchroot.sh
 fi
 
 if [ "$secenek" = "5" ]
@@ -84,12 +84,12 @@ clear
 echo "$(cat malzeme/$lang/8)"
 read pool
 echo "$(cat malzeme/$lang/9)"
-read secpool
+read dist
 echo "$(cat malzeme/$lang/10)"
 read arch
 echo "$arch" > ./config/arch
 echo "$pool" > ./config/pool
-echo "$secpool" > ./config/security_pool
+echo "$dist" > ./config/dist
 fi
 
 if [ "$secenek" = "9" ]

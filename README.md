@@ -18,15 +18,15 @@ Bu program ile birlikte gelen hazır şablonu kullanarak isohybrid biçiminde
 bir live iso oluşturur. Bu live isoyu DVD/USB üzerine yazıp kurulum 
 yapabilirsiniz.
 
-4- squashfs oluşturucu
-Bu program lb build aracısığı ile squashfs oluşturmaya yarar. Bu squashfs 
-dosyasını live isoya ekleyebilirsiniz. isterseniz de iso çıkarıcı ile 
-açıp düzenleyebilirsiniz.
+4- chroot oluşturucu
+Bu program debootstrap aracılığı ile chroot oluşturmaya yarar. Bu chroot
+dosyasını live isoya ekleyebilirsiniz. Daha sonra isterseniz de iso çıkarıcı
+ile açıp düzenleyebilirsiniz.
 
 
 #gerekenler:
 
--live build
+-debootstrap
 
 -squashfs tools
 

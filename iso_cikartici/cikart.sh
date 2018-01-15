@@ -29,3 +29,5 @@ mv squashfs-root chroot
 echo "nameserver 8.8.8.8" > ./chroot/etc/resolv.conf
 mount --bind /dev/ ./chroot/dev/
 mount --bind /sys/ ./chroot/sys/
+mount --bind /proc/ ./chroot/proc/
+mount --bind /dev/pts/ ./chroot/dev/pts/
