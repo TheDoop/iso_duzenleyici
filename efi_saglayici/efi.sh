@@ -1,11 +1,19 @@
-lang="$(cat ../config/lang)"
 if [ -f ../config/binary ]
 then
 echo ":"
 else
 echo "$(cat ../malzeme/$lang/2)"
 read binaryx
+if [ "$binaryx" == "" ]
+then
+pwd=$(pwd)
+cd ..
+echo "$(pwd)/iso_olusturucu/binary/" > ./config/binary
+cd $pwd
+else
 echo "$binaryx" > ../config/binary
+fi
+
 fi
 binary="$(cat ../config/binary)"
 cp -pf $binary/boot/grub/efi.img efi.img
