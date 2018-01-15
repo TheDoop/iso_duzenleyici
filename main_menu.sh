@@ -101,7 +101,6 @@ chmod +x ./efi.sh
 cd ..
 fi
 
-
 cd $konum
 echo "$(cat malzeme/$lang/3)"
 read duraklama
