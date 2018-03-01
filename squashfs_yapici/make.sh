@@ -15,7 +15,8 @@ cd $chrootx/root/
 rm -rf ./{*,.*} 2> /dev/null
 cp -prf $chrootx/etc/skel/ -T $chrootx/root/
 rm -rf $chrootx/var/lib/apt/lists/*
-rm -rf $chrootx/tmp
+cd $chrootx/tmp/
+rm -rf ./{*,.*} 2> /dev/null
 cd $konum
 umount -Rf $chrootx/dev/pts/
 umount -Rf $chrootx/proc/
